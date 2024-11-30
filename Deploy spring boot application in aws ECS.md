@@ -157,13 +157,7 @@ ECS services help run and maintain a set of tasks.
 
 ---
 
-### **Deploying a Spring Boot Application to AWS ECS Using Docker, GitHub Actions, and ECR**
-
-This guide explains how to containerize a Spring Boot application, push it to Amazon ECR, and deploy it to ECS using GitHub Actions. It also explains how to configure your GitHub repository to automate this process.
-
----
-
-### **Step 1: Create a Dockerfile**
+### **6: Create a Dockerfile**
 
 A `Dockerfile` is used to containerize your Spring Boot application. Place this file in the root folder of your Spring Boot project.
 
@@ -210,7 +204,7 @@ CMD ["java", "-jar", "/app/shapefit-0.0.2-SNAPSHOT.war"]
 
 ---
 
-### **Step 2: Configure GitHub Actions Workflow**
+### **7: Configure GitHub Actions Workflow**
 
 GitHub Actions automates the deployment process by building, pushing the Docker image, and updating ECS tasks.
 
@@ -297,7 +291,7 @@ jobs:
 
 ---
 
-### **Step 3: Configure GitHub Secrets**
+### **8: Configure GitHub Secrets**
 
 1. **Navigate to GitHub Secrets**:  
    In your repository, go to `Settings` → `Secrets and variables` → `Actions`.
@@ -313,7 +307,7 @@ jobs:
 
 ---
 
-### **Step 4: Trigger the Workflow**
+### **9: Trigger the Workflow**
 
 1. **Navigate to GitHub Actions**:  
    Go to `Actions` in your GitHub repository.
@@ -346,13 +340,13 @@ Follow these simple steps:
 
 ---
 
-### **Step 1: Assign the Namecheap Domain to Amazon Route 53**
+### **10: Assign the Namecheap Domain to Amazon Route 53**
 
 Refer to the guide on [assigning a Namecheap domain to Amazon Route 53](./set%20up%20domain%20using%20namecheap.md) for detailed instructions. Complete this step first to link your domain to Route 53.
 
 ---
 
-### **Step 2: Get the Load Balancer DNS Name**
+### **11: Get the Load Balancer DNS Name**
 
 1. Go to the **Load Balancer** section in the AWS Management Console.
 2. Find the load balancer for your application.
@@ -360,7 +354,7 @@ Refer to the guide on [assigning a Namecheap domain to Amazon Route 53](./set%20
 
 ---
 
-### **Step 3: Create a Record in Route 53**
+### **12: Create a Record in Route 53**
 
 1. Open **Route 53** in the AWS Console and navigate to your hosted zone (created in Step 1).
 2. Create a new record:
@@ -371,7 +365,7 @@ Refer to the guide on [assigning a Namecheap domain to Amazon Route 53](./set%20
 
 ---
 
-### **Step 4: Verify Your Domain**
+### **13: Verify Your Domain**
 
 After setting up the record, your domain will now be ready. For example:
 
