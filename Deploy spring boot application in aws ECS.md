@@ -1,4 +1,4 @@
-### Step-by-Step Guide to Setting Up an Amazon RDS Database, Amazon ECR, ECS Cluster, and Deploying a Spring Boot Application
+# Deploying a Spring Boot Application Using Github Actions
 
 ---
 
@@ -333,15 +333,6 @@ jobs:
    ```
 
 ---
-
-### **Conclusion**
-
-By following this guide, you:
-
-- Built and containerized your Spring Boot application using Docker.
-- Pushed the Docker image to Amazon ECR.
-- Deployed the application to Amazon ECS using GitHub Actions.
-- Successfully accessed your API endpoints.
 
 🎉 **Congratulations! Your Spring Boot application is live in AWS ECS.** 🎉
 

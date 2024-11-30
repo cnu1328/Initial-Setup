@@ -42,7 +42,7 @@
 1. **Log in to Namecheap:**
 
    - Go to the **Domain List** in your Namecheap account.
-   - Find your domain and click **Manage**.
+   - Find your domain (or buy domain name) and click **Manage**.
 
 2. **Change the Nameservers:**
    - Under the **Nameservers** section, select **Custom DNS**.
