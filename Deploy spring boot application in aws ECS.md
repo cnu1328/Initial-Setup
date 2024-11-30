@@ -344,3 +344,48 @@ By following this guide, you:
 - Successfully accessed your API endpoints.
 
 🎉 **Congratulations! Your Spring Boot application is live in AWS ECS.** 🎉
+
+---
+
+### Setting Up a Custom Domain for Your Spring Boot Application Using Namecheap and AWS Route 53
+
+When deploying your Spring Boot application, accessing it through a public IP address is not ideal because the IP can change randomly. Instead, you can assign a custom domain (e.g., `example.in`) to your application using a Namecheap domain and Amazon Route 53.
+
+Follow these simple steps:
+
+---
+
+### **Step 1: Assign the Namecheap Domain to Amazon Route 53**
+
+Refer to the guide on [assigning a Namecheap domain to Amazon Route 53](./set%20up%20domain%20using%20namecheap.md) for detailed instructions. Complete this step first to link your domain to Route 53.
+
+---
+
+### **Step 2: Get the Load Balancer DNS Name**
+
+1. Go to the **Load Balancer** section in the AWS Management Console.
+2. Find the load balancer for your application.
+3. Copy its **DNS Name** (e.g., `my-app-lb-123456789.us-east-1.elb.amazonaws.com`).
+
+---
+
+### **Step 3: Create a Record in Route 53**
+
+1. Open **Route 53** in the AWS Console and navigate to your hosted zone (created in Step 1).
+2. Create a new record:
+   - Set the **Record Type** to `CNAME`.
+   - Use `www` or `api` as the **Record Name**.
+   - Paste the **Load Balancer DNS Name** as the **Value**.
+3. Save the record.
+
+---
+
+### **Step 4: Verify Your Domain**
+
+After setting up the record, your domain will now be ready. For example:
+
+```
+http://example.in/api/users
+```
+
+🎉 **Congratulations! Your Spring Boot application is live in AWS ECS with user-friendly domain name** 🎉
