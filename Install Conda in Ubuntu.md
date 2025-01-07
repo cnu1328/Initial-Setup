@@ -76,7 +76,15 @@ conda --version
 
 ---
 
-### **Step 7: (Optional) Add Conda to your PATH**
+### **Step 7: Conda Deactivate**
+To deactivate a Conda environment (whether using Miniconda or Anaconda), you can simply run the following command
+
+```bash
+conda deactivate
+```
+
+
+### **Step 8: (Optional) Add Conda to your PATH**
 If you skipped the option to initialize Conda during installation, you can manually initialize it:
 
 ```bash
@@ -89,7 +97,7 @@ Restart your terminal for the changes to take effect.
 
 ---
 
-### **Step 8: Update Conda**
+### **Step 9: Update Conda**
 Finally, update Conda to ensure you have the latest version:
 
 ```bash
