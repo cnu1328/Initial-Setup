@@ -24,6 +24,19 @@
     ```bash
     cd <repository-directory>
     ```
+## Clone the Repository Using SSH
+Now, clone the repository using the SSH URL:
+
+Copy the SSH URL from your GitHub repository:
+```bash
+git@github.com:cnu1328/Django.git
+```
+
+Clone the repository:
+```bash
+git clone git@github.com:cnu1328/Django.git
+```
+
 
 ## Managing Changes
 
